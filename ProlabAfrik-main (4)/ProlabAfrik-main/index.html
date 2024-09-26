@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+    <title>Prolab Afrik</title>
+    <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+</head>
+
+<body class="bg-black relative">
+    <header  id="header" class="sticky top-0 z-10 w-full" >
+        <span class="absolute right-0 text-primary text-5xl text-center md:hidden lg:hidden" onclick="toggleMenu()" id="hamburger-menu-btn" >&#9776</span>
+        <nav class="justify-center bg-black md:bg-transparent lg:bg-transparent w-full hidden md:flex lg:flex" id="navbar">
+            <div
+                class="flex gap-5 items-center p-3  mt-5  flex-col md:flex-row lg:flex-row md:w-fit   md:rounded-full md:border-white md:border lg:w-fit   lg:rounded-full lg:border-white lg:border">
+                <img src="./assets/logo.png" alt="logo" class="hover:animate-spin cursor-pointer">
+                <div onclick="scrollToElement('home-section')"  class="group  transition duration-300">
+                    <a class="text-lg text-white hover:cursor-pointer" href="index.html">Accueil</a>
+                    <span class="block w-0 group-hover:w-1/2 transition-all duration-500 h-0.5 bg-primary"></span>
+                </div>
+                <div  class="group  transition duration-300">
+                    <a class="text-lg text-white hover:cursor-pointer" href="logiciels.html">Création Logiciels</a>
+                    <span class="block w-0 group-hover:w-1/2 transition-all duration-500 h-0.5 bg-primary"></span>
+                </div>
+                <div class="group  transition duration-300">
+                    <a class="text-lg text-white hover:cursor-pointer" href="formations.html">Formations</a>
+                    <span class="block w-0 group-hover:w-1/2 transition-all duration-500 h-0.5 bg-primary"></span>
+                </div>
+                <a href="connexion.php" class="bg-primary text-lg text-white font-inter font-normal tracking-wide rounded-full p-3 hover:animate-pulse inline-block text-center">
+                    Connexion
+                </a>
+                <!-- <div onclick="scrollToElement('services-section')"  class="group transition duration-300">
+                    <p class="text-lg text-white hover:cursor-pointer">Services <span>v</span></p>
+                    <span class="block w-0 group-hover:w-1/2 transition-all duration-500 h-0.5 bg-primary"></span>
+                    <div class="hidden  group-hover:flex flex-col gap-3  group-hover:absolute transition-all duration-500">
+                        <a href="#" class="text-white font-light hover:cursor-pointer hover:underline">Développement de Logiciels</a>
+                        <a  href="#" class="text-white font-light hover:cursor-pointer hover:underline">Formation</a>
+                        <a href="#" class="text-white font-light hover:cursor-pointer hover:underline">Incubateur</a>
+                    </div>
+                </div>
+        </nav> -->
+    </header>
+    <main id="main">
+        <!-- Home section -->
+        <section id="home-section" class="flex items-end relative m-12">
+            <!--blurs -->
+            <div class="absolute rounded-full w-1 h-1  bottom-1/2 left-1/2 -z-50 bg-primary shadow-bgBlurPrimary animate-pulse"></div>
+            <div class=" absolute  rounded-full right-0  bottom-1/2 -z-50 w-1 h-1 bg-secondary shadow-bgBlurSecondary animate-pulse"></div>
+
+            <div class="flex flex-col gap-y-4">
+                <p class="text-5xl lg:text-6xl md:text-6xl text-white font-inter font-black fade-in">Transformez vos</p>
+                <p class="text-5xl lg:text-6xl md:text-6xl text-primary font-inter font-black fade-in">Idées En Logiciels</p>
+                <p class="text-2xl lg:text-3xl text-white font-inter font-normal fade-in">ProLabAfrik vous accompagne dans la création de
+                    solutions logicielles sur mesure</p>
+                    <a href="contact.html"><button
+                        class="bg-primary text-lg text-white font-inter font-normal tracking-wide rounded-full  p-3 hover:animate-pulse">Contactez-Nous</button></a>
+                
+            </div>
+            <div class="fade-in">
+                <img src="./assets/home-background.png" alt="Home Background" width="800px" class="hidden lg:block md:block">
+            </div>
+        </section>
+
+        <!-- Services section -->
+        <section id="services-section" class="flex flex-col gap-10 relative reveal-element">
+            <div
+                class=" absolute  right-1/2 left-1/2 top-1/2 bottom-1/2 -z-50 w-1 h-1 rounded-full bg-secondary shadow-bgBlurSecondary animate-pulse">
+            </div>
+            <div class="w-fit flex flex-col gap-2 m-auto">
+                <p class="text-4xl md:text-5xl lg:text-5xl text-white uppercase font-black">Nos Services</p>
+                <!-- separator -->
+                <div class="w-1/2 h-4 bg-primary"></div>
+            </div>
+            <p class="text-white text-lg text-center">Chez PROLAB l’innovation et l’expertise se rencontrent pour propulser votre entreprise et votre carrière vers de nouveaux sommets.
+                 Nous vous offrons une gamme de services pour répondre vos besoins technologiques.</p>
+            <div class="flex flex-col justify-center items-center gap-10 m-5 lg:flex-row fade-in ">
+                <div class="group flex  flex-col gap-5 border-white border rounded-lg items-center lg:w-9/12 p-5 text-center">
+                    <img src="assets/services/icon1.svg" alt="icon1" width="100px" height="100px">
+                    <p class="text-white text-2xl uppercase font-bold">SOLUTIONS LOGICIELLES INNOVANTES
+                    </p>
+                    <p class="text-white text-lg font-light border-dashed border-white border p-2 group-hover:border-primary">
+                        Chez PROLAB, nous développons des solutions logicielles personnalisées qui répondent aux défis uniques de votre secteur. Découvrez comment nos technologies avancées peuvent transformer votre entreprise.
+                    </p>
+                    <a class="text-white text-lg w-fit bg-primary p-5 rounded-full group-hover:animate-pulse" href="logiciels.html">En savoir plus ></a>
+                </div>
+
+                <div class="group flex  flex-col gap-5 border-white border rounded-lg items-center lg:w-9/12 p-5 text-center">
+                    <img src="assets/services/icon2.svg" alt="icon1" width="100px" height="100px">
+                    <p class="text-white text-2xl uppercase font-bold">FORMATIONS PROFESSIONNELLES</p>
+                    <p class="text-white text-lg font-light border-white border-dashed group-hover:border-primary border p-2">
+                        Équipez-vous des compétences nécessaires pour exceller dans le monde numérique avec nos cours approfondis en Python, Java, C++, et bien plus encore.</p>
+                    <a class="text-white text-lg w-fit bg-primary p-5 rounded-full group-hover:animate-pulse" href="formations.html">En savoir plus></a>
+                </div>
+
+                <div class="group flex  flex-col gap-5 border-white border rounded-lg items-center lg:w-9/12 p-5 text-center">
+                    <img src="assets/services/icon3.svg" alt="icon1" width="100px" height="100px">
+                    <p class="text-white text-2xl uppercase font-bold">INCUBATEUR DE STARTUP
+                    </p>
+                    <p class="text-white text-lg font-light border-white border-dashed group-hover:border-primary border p-2">
+                        Donnez vie à vos idées innovantes avec l'aide de notre incubateur de projets. Nous vous fournirons le mentorat, les ressources techniques et l'accès à un réseau d'experts et d'investisseurs pour transformer votre vision en réalité.
+</p>
+                    <button class="text-white text-lg w-fit bg-primary p-5 rounded-full group-hover:animate-pulse">En savoir plus ></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="incubator-section" class="flex flex-col gap-20 m-10 reveal-element">
+            <div class="w-fit flex flex-col gap-2 m-auto">
+                <p class="text-4xl md:text-5xl lg:text-5xl text-white text-center uppercase font-black">l'incubateur</p>
+                <!-- separator -->
+                <div class="w-1/2 h-4 bg-primary"></div>
+            </div>
+            <div class="flex relative gap-20">
+                <div
+                    class=" absolute right-1/2 left-1/2 top-1/2 bottom-1/2 -z-50 w-1 h-1 rounded-full bg-primary shadow-bgBlurPrimary animate-pulse">
+                </div>
+                <div class="flex flex-col gap-10 fade-in w-full">
+                    <p class="text-white text-4xl font-bold capitalize lg:text-5xl">Libérez votre potentiel entrepreneurial</p>
+                    <p class="text-white text-sm font-normal lg:text-3xl md:text-3xl">L'incubation des projets chez Prolab se déroule de manière
+                        collaborative et personnalisée, offrant un accompagnement sur mesure à chaque étape du
+                        développement. Nos experts guident les entrepreneurs à travers le processus, en fournissant des
+                        conseils stratégiques, un accès à des ressources spécialisées et un réseau de partenaires clés, afin
+                        de maximiser les chances de succès de chaque projet.</p>
+                </div>
+                <img src="assets/incubator/robot.png" alt="robot" class="hidden lg:block lg:w-1/2">
+            </div>
+
+            <div class="relative mt-20">
+                <img src="assets/incubator/africa.svg" alt="africa"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10">
+                <p class="text-white text-4xl lg:text-5xl md:text-5xl font-bold capitalize text-center">Démarrez votre parcours et lancez votre
+                    business</p>
+                <div class="mt-20 lg:flex lg:items-center">
+                    <div class="flex flex-wrap gap-10 md:gap-36 lg:gap-36 mt-20">    
+                        <!-- whole-block -->
+                        <div class="flex gap-10 items-center fade-in">
+                            <!-- left -->
+                            <div class="w-fit">
+                                <p class="text-white text-sm md:text-2xl lg:text-2xl font-medium w-fit">Bénéficiez d'un support</p>
+                                <p class="text-white text-sm md:text-2xl lg:text-2xl font-light">Profitez d'un accompagnement sur mesure et d'un soutien inégalé pour concrétiser vos projets. Notre équipe dévouée est là pour vous guider à chaque étape de votre parcours vers le succès.</p>
+                            </div>
+                            <!-- right -->
+                            <div class="flex items-center">
+                                <!-- circle with icon -->
+                                <div
+                                    class="w-16 h-16 md:w-24 md:h-24 lg:w-24 lg:h-24 rounded-full bg-transparent border-8 border-secondary flex items-center justify-center">
+                                    <img src="./assets/incubator/handshake.svg" alt="lamp" class="w-10 h-10 md:w-16  lg:w-16">
+                                </div>
+                                <!-- dashed-arrow -->
+                                <div class="hidden md:flex lg:flex md:items-center lg:items-center">
+                                    <!-- line -->
+                                    <div class="w-10 h-0.5 bg-transparent border-dashed border-2 border-secondary"></div>
+                                    <!-- end circle -->
+                                    <div class="w-4 h-4 rounded-full bg-secondary"></div>
+                                </div>  
+                            </div>
+                        </div>
+    
+                        <!-- whole-block -->
+                        <div class="flex gap-10 items-center fade-in">
+                            <!-- left -->
+                            <div class="w-fit">
+                                <p class="text-white text-sm md:text-2xl lg:text-2xl font-medium w-fit">Lancez votre projet</p>
+                                <p class="text-white text-sm md:text-2xl lg:text-2xl font-light">Plongez dans l'aventure entrepreneuriale et donnez vie à vos projets les plus ambitieux. Notre équipe expérimentée est là pour vous guider à chaque étape de votre parcours entrepreneurial. Rejoignez-nous dès aujourd'hui et lancez-vous vers le succès.</p>
+                            </div>
+                            <!-- right -->
+                            <div class="flex items-center">
+                                <!-- circle with icon -->
+                                <div
+                                    class="w-16 h-16 md:w-24 md:h-24 lg:w-24 lg:h-24 rounded-full bg-transparent border-8 border-secondary flex items-center justify-center">
+                                    <img src="./assets/incubator/rocket.svg" alt="lamp" class="w-10 h-10 md:w-16  lg:w-16">
+                                </div>
+                                <!-- dashed-arrow -->
+                                <div class="hidden md:flex lg:flex md:items-center lg:items-center">
+                                    <!-- line -->
+                                    <div class="w-10 h-0.5 bg-transparent border-dashed border-2 border-secondary"></div>
+                                    <!-- end circle -->
+                                    <div class="w-4 h-4 rounded-full bg-secondary"></div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden lg:block lg:w-0.5 lg:h-screen lg:bg-transparent lg:border-white lg:border-dashed lg:border-2 md:block md:w-0.5 md:h-screen  md:bg-transparent md:border-white md:border-dashed md:border-2"></div>
+
+                    <div class="flex flex-wrap gap-10 lg:gap-64 md:gap-64 mt-20">
+                        <!-- whole-block -->
+                        <div class="flex gap-10 items-center fade-in">
+                            <!-- right -->
+                            <div class="flex items-center">
+                                <div class="hidden md:flex lg:flex md:items-center lg:items-center">
+                                    <!-- end circle -->
+                                    <div class="w-4 h-4 rounded-full bg-primary"></div>
+                                    <!-- line -->
+                                    <div class="w-10 h-0.5 bg-transparent border-dashed border-2 border-primary"></div>
+                                </div>
+                                <div
+                                    class="w-16 h-16 md:w-24 md:h-24 lg:w-24 lg:h-24 rounded-full bg-transparent border-8 border-primary flex items-center justify-center">
+                                    <img src="./assets/incubator/lamp.svg" alt="lamp" class="w-10 h-10 md:w-16  lg:w-16">
+                                </div>
+                            </div>
+                            <!-- left -->
+                            <div class="w-fit">
+                                <p class="text-white text-sm md:text-2xl lg:text-2xl font-medium w-fit">Découvrez les opportunités</p>
+                                <p class="text-white text-sm md:text-2xl lg:text-2xl font-light">Explorez les opportunités
+                                    numériques en plein essor sur le continent africain et préparez-vous à saisir les
+                                    occasions de marchés qui se présentent à vous.</p>
+                            </div>
+                        </div>
+                        <!-- whole-block -->
+                        <div class="flex gap-10 items-center fade-in">
+                            <!-- right -->
+                            <div class="flex items-center">
+                                <div class="hidden md:flex lg:flex md:items-center lg:items-center">
+                                    <!-- end circle -->
+                                    <div class="w-4 h-4 rounded-full bg-primary"></div>
+                                    <!-- line -->
+                                    <div class="w-10 h-0.5 bg-transparent border-dashed border-2 border-primary"></div>
+                                </div>
+                                <div
+                                    class="w-16 h-16 md:w-24 md:h-24 lg:w-24 lg:h-24 rounded-full bg-transparent border-8 border-primary flex items-center justify-center">
+                                    <img src="./assets/incubator/people.svg" alt="lamp" class="w-10 h-10 md:w-16  lg:w-16">
+                                </div>
+                            </div>
+                            <!-- left -->
+                            <div class="w-fit">
+                                <p class="text-white text-sm md:text-2xl lg:text-2xl font-medium w-fit">Collaborez et innovez</p>
+                                <p class="text-white text-sm md:text-2xl lg:text-2xl font-light">Rejoignez notre communauté dynamique pour collaborer et innover ensemble. Explorons de nouvelles voies, repoussons les limites et transformons des idées en réalité.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+    <footer  id="footer" class="flex gap-7 flex-col w-full mb-10 relative" >
+        <div class="absolute right-1/2 rounded-full w-10 h-10 flex items-center justify-center bg-secondary animate-bounce hover:cursor-pointer" onclick="scrollToElement('home-section')"><span class="text-center text-white font-light text-3xl">&#8593</span></div>
+        <div class="w-full h-0.5 bg-white"></div>
+        <div class="flex justify-evenly flex-wrap gap-2">
+            <div class="flex flex-col gap-1">
+                <p class="text-white text-lg font-medium uppercase">Contact</p>
+                <p class="text-white text-lg font-normal">+229 64 25 95 31</p>
+                <p class="text-white text-lg font-normal">+33 6 81 68 09 13</p>
+                <p class="text-white text-lg font-normal">contact@prolabafrik.com</p>
+            </div>
+            <div class="flex flex-col gap-3">
+                <p class="text-white text-lg font-medium uppercase">Réseaux sociaux</p>
+                <img src="assets/social.png" alt="">
+            </div>
+        </div>  
+        <p class="text-white text-lg font-bold text-center">© 2024 ProLabAfrik</p>
+    </footer>
+    <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>

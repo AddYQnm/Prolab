@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+    <title>Prolab Afrik</title>
+    <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+</head>
+
+<body class="bg-black relative">
+    <header id="header" class="sticky top-0 z-10 w-full">
+        <span class="absolute right-0 text-primary text-5xl text-center md:hidden lg:hidden" onclick="toggleMenu()"
+            id="hamburger-menu-btn">&#9776</span>
+        <nav class="justify-center bg-black md:bg-transparent lg:bg-transparent w-full hidden md:flex lg:flex"
+            id="navbar">
+            <div
+                class="flex gap-5 items-center p-3  mt-5  flex-col md:flex-row lg:flex-row md:w-fit   md:rounded-full md:border-white md:border lg:w-fit   lg:rounded-full lg:border-white lg:border">
+                <img src="./assets/logo.png" alt="logo" class="hover:animate-spin cursor-pointer">
+                <div onclick="scrollToElement('home-section')" class="group  transition duration-300">
+                    <a class="text-lg text-white hover:cursor-pointer" href="index.html">Accueil</a>
+                    <span class="block w-0 group-hover:w-1/2 transition-all duration-500 h-0.5 bg-primary"></span>
+                </div>
+                <div class="group  transition duration-300">
+                    <a class="text-lg text-white hover:cursor-pointer" href="logiciels.html">Création Logiciels</a>
+                    <span class="block w-0 group-hover:w-1/2 transition-all duration-500 h-0.5 bg-primary"></span>
+                </div>
+                <div class="group  transition duration-300">
+                    <a class="text-lg text-white hover:cursor-pointer" href="formations.html">Formations</a>
+                    <span class="block w-0 group-hover:w-1/2 transition-all duration-500 h-0.5 bg-primary"></span>
+                </div>
+                <a href="connexion.php" class="bg-primary text-lg text-white font-inter font-normal tracking-wide rounded-full p-3 hover:animate-pulse inline-block text-center">
+                    Connexion
+                </a>
+                <!-- <div onclick="scrollToElement('services-section')"  class="group transition duration-300">
+                        <p class="text-lg text-white hover:cursor-pointer">Services <span>v</span></p>
+                        <span class="block w-0 group-hover:w-1/2 transition-all duration-500 h-0.5 bg-primary"></span>
+                        <div class="hidden  group-hover:flex flex-col gap-3  group-hover:absolute transition-all duration-500">
+                            <a href="#" class="text-white font-light hover:cursor-pointer hover:underline">Développement de Logiciels</a>
+                            <a  href="#" class="text-white font-light hover:cursor-pointer hover:underline">Formation</a>
+                            <a href="#" class="text-white font-light hover:cursor-pointer hover:underline">Incubateur</a>
+                        </div>
+                    </div>
+            </nav> -->
+    </header>
+    <main>
+        <div id="header-section" class="flex flex-col gap-20 m-10 reveal-element">
+            <div class="w-fit flex flex-col gap-2 m-auto">
+                <p class="text-3xl md:text-5xl lg:text-5xl text-white text-left uppercase font-black fade-in">Développement de
+                    logiciels sur mesures
+                </p>
+                <!-- separator -->
+                <div class="hidden md:w-1/5 h-4 md:bg-primary"></div>
+            </div>
+            <div class="flex relative gap-20">
+                <div
+                    class=" absolute right-1/2 left-1/2 top-1/2 bottom-1/2 -z-50 w-1 h-1 rounded-full bg-secondary shadow-bgBlurSecondary animate-pulse">
+                </div>
+                <p class="text-white text-lg font-normal lg:text-3xl md:text-3xl text-left md:text-center">Chez PROLAB,
+                    nous développons des solutions logicielles personnalisées qui répondent aux défis uniques de votre
+                    secteur. Découvrez comment nos technologies avancées peuvent transformer votre entreprise.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 m-auto gap-20 mb-10 w-10/12">
+            <div class="flex  gap-5 w-fit m-auto p-5 border border-white rounded-2xl reveal-element">
+                <div class="flex flex-col  gap-10">
+                    <h2 class="text-blue-500 text-3xl font-bold fade-in">OPTIMISATION DES OPERATIONS DE TRANSPORT</h2>
+                    <div class="flex flex-col gap-5  md:items-start">
+                        <p class="text-white text-2xl md:text-3xl fade-in">&#x2713
+                            <span class="text-white text-2xl md:text-3xl fade-in">Maîtrise des composants React</span>
+                        </p>
+                        <p class="text-white text-2xl md:text-3xl fade-in">&#x2713
+                            <span class="text-white text-2xl md:text-3xl fade-in">Création d'applications web performantes</span>
+                        </p>
+                        <p class="text-white text-2xl md:text-3xl fade-in">&#x2713
+                            <span class="text-white text-2xl md:text-3xl fade-in">Routage dynamique et navigation</span>
+                        </p>
+                        <p class="text-white text-2xl md:text-3xl fade-in">&#x2713
+                            <span class="text-white text-2xl md:text-3xl fade-in">Réduction des coûts</span>
+                        </p>
+                    </div>
+                    <a href="contact.html"
+                        class="bg-blue-500 text-2xl text-white font-inter font-normal tracking-wide rounded-2xl  p-3 hover:animate-pulse w-fit fade-in">Demandez
+                        Un Devis
+                    </a>
+                </div>
+                <img src="assets/img1.jpeg" alt="Transport Image" class="hidden md:block w-auto h-96 rounded-2xl fade-in">
+            </div>
+
+            <div class="flex  gap-5 w-fit m-auto p-5 border border-white rounded-2xl reveal-element reveal-element">
+                <div class="flex flex-col  gap-10">
+                    <h2 class="text-blue-500 text-3xl font-bold fade-in uppercase">Logiciels sur Mesure pour les Services
+                    </h2>
+                    <div class="flex flex-col gap-5 items-start">
+                        <p class="text-white text-2xl md:text-3xl fade-in">&#x2713
+                            <span class="text-white text-2xl md:text-3xl fade-in">Simplification de vos activités de services</span>
+                        </p>
+                        <p class="text-white text-2xl md:text-3xl fade-in">&#x2713
+                            <span class="text-white text-2xl md:text-3xl fade-in">Gestion des clients</span>
+                        </p>
+                        <p class="text-white text-2xl md:text-3xl fade-in">&#x2713
+                            <span class="text-white text-2xl md:text-3xl fade-in">Rendez-vous</span>
+                        </p>
+                        <p class="text-white text-2xl md:text-3xl fade-in">&#x2713
+                            <span class="text-white text-2xl md:text-3xl fade-in">interventions sur le terrain</span>
+                        </p>
+                    </div>
+                    <a href="contact.html"
+                        class="bg-blue-500 text-2xl text-white font-inter font-normal tracking-wide rounded-2xl  p-3 hover:animate-pulse w-fit fade-in">Demandez
+                        Un Devis
+                    </a>
+                </div>
+                <img src="assets/img2.jpeg" alt="Transport Image" class="hidden md:block  w-auto h-96 rounded-2xl">
+            </div>
+
+            <div class="flex  gap-5 w-fit m-auto p-5 border border-white rounded-2xl reveal-element">
+                <div class="flex flex-col  gap-10">
+                    <h2 class="text-blue-500 text-3xl font-bold fade-in uppercase">Technologies Avancées pour la Santé
+                    </h2>
+                    <div class="flex flex-col gap-5 items-start">
+                        <p class="text-white text-2xl md:text-3xl fade-in">&#x2713
+                            <span class="text-white text-2xl md:text-3xl fade-in">Amélioration des soins aux patients</span>
+                        </p>
+                        <p class="text-white text-2xl md:text-3xl fade-in">&#x2713
+                            <span class="text-white text-2xl md:text-3xl fade-in">Gestion des dossiers Médicaux</span>
+                        </p>
+                        <p class="text-white text-2xl md:text-3xl fade-in">&#x2713
+                            <span class="text-white text-2xl md:text-3xl fade-in">Suivi Patient</span>
+                        </p>
+                        <p class="text-white text-2xl md:text-3xl fade-in">&#x2713
+                            <span class="text-white text-2xl md:text-3xl fade-in">Diagnostic assisté</span>
+                        </p>
+                    </div>
+                    <a href="contact.html"
+                        class="bg-blue-500 text-2xl text-white font-inter font-normal tracking-wide rounded-2xl  p-3 hover:animate-pulse w-fit fade-in">Demandez
+                        Un Devis
+                    </a>
+                </div>
+                <img src="assets/img3.jpeg" alt="Transport Image" class="hidden md:block w-auto h-96 rounded-2xl fade-in">
+            </div>
+
+            <div class="flex  gap-5 w-fit m-auto p-5 border border-white rounded-2xl reveal-element">
+                <div class="flex flex-col  gap-10">
+                    <h2 class="text-blue-500 text-3xl font-bold fade-in uppercase">Innovation en Gestion de l'Énergie
+                    </h2>
+                    <div class="flex flex-col gap-5 items-start">
+                        <p class="text-white text-2xl md:text-3xl fade-in">&#x2713
+                            <span class="text-white text-2xl md:text-3xl fade-in">Gestion efficace de l’energie</span>
+                        </p>
+                        <p class="text-white text-2xl md:text-3xl fade-in">&#x2713
+                            <span class="text-white text-2xl md:text-3xl fade-in">Optimisation de la consammation</span>
+                        </p>
+                        <p class="text-white text-2xl md:text-3xl fade-in">&#x2713
+                            <span class="text-white text-2xl md:text-3xl fade-in">Intégration de l’energie renouvenable</span>
+                        </p>
+                    </div>
+                    <a href="contact.html"
+                        class="bg-blue-500 text-2xl text-white font-inter font-normal tracking-wide rounded-2xl  p-3 hover:animate-pulse w-fit fade-in">Demandez
+                        Un Devis
+                    </a>
+                </div>
+                <img src="assets/img4.jpeg" alt="Transport Image" class="hidden md:block w-auto h-96 rounded-2xl fade-in">
+            </div>
+        </div>
+
+
+    </main>
+    <footer  id="footer" class="flex gap-7 flex-col w-full mb-10 relative" >
+        <div class="absolute right-1/2 rounded-full w-10 h-10 flex items-center justify-center bg-secondary animate-bounce hover:cursor-pointer" onclick="scrollToElement('home-section')"><span class="text-center text-white font-light text-3xl">&#8593</span></div>
+        <div class="w-full h-0.5 bg-white"></div>
+        <div class="flex justify-evenly flex-wrap gap-2">
+            <div class="flex flex-col gap-1">
+                <p class="text-white text-lg font-medium uppercase">Contact</p>
+                <p class="text-white text-lg font-normal">+229 64 25 95 31</p>
+                <p class="text-white text-lg font-normal">+33 6 81 68 09 13</p>
+                <p class="text-white text-lg font-normal">contact@prolabafrik.com</p>
+            </div>
+            <div class="flex flex-col gap-3">
+                <p class="text-white text-lg font-medium uppercase">Réseaux sociaux</p>
+                <img src="assets/social.png" alt="">
+            </div>
+        </div>  
+        <p class="text-white text-lg font-bold text-center">© 2024 ProLabAfrik</p>
+    </footer>
+    <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>

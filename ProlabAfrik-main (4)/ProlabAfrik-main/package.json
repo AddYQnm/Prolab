@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  },
+  "scripts": {
+    "start": "npx tailwindcss -i ./style.css -o ./output.css --watch"
+  },
+  "name": "prolabafrik-main",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

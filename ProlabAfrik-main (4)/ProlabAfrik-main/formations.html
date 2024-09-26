@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+    <title>Prolab Afrik</title>
+    <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+</head>
+
+<body class="bg-black relative">
+    <header  id="header" class="sticky top-0 z-10 w-full" >
+        <span class="absolute right-0 text-primary text-5xl text-center md:hidden lg:hidden" onclick="toggleMenu()" id="hamburger-menu-btn" >&#9776</span>
+        <nav class="justify-center bg-black md:bg-transparent lg:bg-transparent w-full hidden md:flex lg:flex" id="navbar">
+            <div
+                class="flex gap-5 items-center p-3  mt-5  flex-col md:flex-row lg:flex-row md:w-fit   md:rounded-full md:border-white md:border lg:w-fit   lg:rounded-full lg:border-white lg:border">
+                <img src="./assets/logo.png" alt="logo" class="hover:animate-spin cursor-pointer">
+                <div onclick="scrollToElement('home-section')"  class="group  transition duration-300">
+                    <a class="text-lg text-white hover:cursor-pointer" href="index.html">Accueil</a>
+                    <span class="block w-0 group-hover:w-1/2 transition-all duration-500 h-0.5 bg-primary"></span>
+                </div>
+                <div  class="group  transition duration-300">
+                    <a class="text-lg text-white hover:cursor-pointer" href="logiciels.html">Création Logiciels</a>
+                    <span class="block w-0 group-hover:w-1/2 transition-all duration-500 h-0.5 bg-primary"></span>
+                </div>
+                <div class="group  transition duration-300">
+                    <a class="text-lg text-white hover:cursor-pointer" href="formations.html">Formations</a>
+                    <span class="block w-0 group-hover:w-1/2 transition-all duration-500 h-0.5 bg-primary"></span>
+                </div>
+                <a href="connexion.php" class="bg-primary text-lg text-white font-inter font-normal tracking-wide rounded-full p-3 hover:animate-pulse inline-block text-center">
+                    Connexion
+                </a>
+                <!-- <div onclick="scrollToElement('services-section')"  class="group transition duration-300">
+                    <p class="text-lg text-white hover:cursor-pointer">Services <span>v</span></p>
+                    <span class="block w-0 group-hover:w-1/2 transition-all duration-500 h-0.5 bg-primary"></span>
+                    <div class="hidden  group-hover:flex flex-col gap-3  group-hover:absolute transition-all duration-500">
+                        <a href="#" class="text-white font-light hover:cursor-pointer hover:underline">Développement de Logiciels</a>
+                        <a  href="#" class="text-white font-light hover:cursor-pointer hover:underline">Formation</a>
+                        <a href="#" class="text-white font-light hover:cursor-pointer hover:underline">Incubateur</a>
+                    </div>
+                </div>
+        </nav> -->
+    </header>
+    <main>
+        <div id="header-section" class="flex flex-col gap-20 m-10 reveal-element">
+            <div class="w-fit flex flex-col gap-2 m-auto">
+                <p class="text-3xl md:text-5xl lg:text-5xl text-white text-left uppercase font-black fade-in">Formations
+                    Professionnelles en Informatique
+                </p>
+                <!-- separator -->
+                <div class="hidden md:w-1/5 h-4 md:bg-primary"></div>
+            </div>
+            <div class="flex relative gap-20">
+                <div
+                    class=" absolute right-1/2 left-1/2 top-1/2 bottom-1/2 -z-50 w-1 h-1 rounded-full bg-secondary shadow-bgBlurSecondary animate-pulse">
+                </div>
+                <p class="text-white text-lg font-normal lg:text-3xl md:text-3xl text-left md:text-center fade-in">Équipez-vous des compétences
+                    nécessaires pour exceller dans le monde numérique avec nos cours approfondis en Python, Java,
+                    C++, et bien plus encore.
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="grid-cols-1 m-auto gap-20 mb-10 w-fit grid lg:grid-cols-2">
+
+            <div
+                class="w-fit h-fit gap-5 border border-white rounded-2xl text-center flex flex-col items-center p-10 reveal-element">
+                <img src="assets/Js.png" alt="Next-js" class="items-center w-28 h-28 fade-in">
+                <p class="text-2xl text-white font-medium uppercase text-center">Apprenez JavaScript</p>
+                <div>
+                    <p class="text-2xl text-white font-medium text-center flex items-center fade-in">
+                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="mr-2">
+                            <path
+                                d="M16 18H2V7H16M13 0V2H5V0H3V2H2C0.89 2 0 2.89 0 4V18C0 18.5304 0.210714 19.0391 0.585786 19.4142C0.960859 19.7893 1.46957 20 2 20H16C16.5304 20 17.0391 19.7893 17.4142 19.4142C17.7893 19.0391 18 18.5304 18 18V4C18 3.46957 17.7893 2.96086 17.4142 2.58579C17.0391 2.21071 16.5304 2 16 2H15V0M14 11H9V16H14V11Z"
+                                fill="white" />
+                        </svg> 65 Jours
+                    </p>
+                </div>
+                <div class="w-fit flex items-center rounded-2xl bg-white fade-in">
+                    <p class="text-md font-medium text-black p-2">Certification disponible</p>
+                    <img src="assets/carbon_badge.png">
+                </div>
+                <div class="flex flex-col gap-3 items-start">
+                        <p class="text-white text-2xl fade-in">&#x2713
+                            <span class="text-white text-lg">Maîtrise du DOM</span>
+                        </p>
+                        <p class="text-white text-2xl fade-in">&#x2713
+                            <span class="text-white text-lg">Asynchrone et Promises</span>
+                        </p>
+                        <p class="text-white text-2xl fade-in">&#x2713
+                            <span class="text-white text-lg">Bibliothèques et frameworks</span>
+                        </p>
+                        <p class="text-white text-2xl fade-in">&#x2713
+                            <span class="text-white text-lg">Événements</span>
+                        </p>
+                        <p class="text-white text-2xl fade-in">&#x2713
+                            <span class="text-white text-lg">Développement d'applications web interactives</span>
+                        </p>
+                </div>
+                <a href="contact.html" class="text-blue-500 text-lg font-medium fade-in">S'inscrire</a>
+            </div>
+
+            <div
+                class="w-fit h-fit gap-5 border border-white rounded-2xl text-center flex flex-col items-center p-10 reveal-element">
+                <img src="assets/Figma.png" alt="Next-js" class="items-center w-28 h-28 fade-in">
+                <p class="text-2xl text-white font-medium uppercase text-center">Apprenez Figma</p>
+                <div>
+                    <p class="text-2xl text-white font-medium text-center flex items-center fade-in">
+                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="mr-2">
+                            <path
+                                d="M16 18H2V7H16M13 0V2H5V0H3V2H2C0.89 2 0 2.89 0 4V18C0 18.5304 0.210714 19.0391 0.585786 19.4142C0.960859 19.7893 1.46957 20 2 20H16C16.5304 20 17.0391 19.7893 17.4142 19.4142C17.7893 19.0391 18 18.5304 18 18V4C18 3.46957 17.7893 2.96086 17.4142 2.58579C17.0391 2.21071 16.5304 2 16 2H15V0M14 11H9V16H14V11Z"
+                                fill="white" />
+                        </svg> 65 Jours
+                    </p>
+                </div>
+                <div class="w-fit flex items-center rounded-2xl bg-white fade-in">
+                    <p class="text-md font-medium text-black p-2">Certification disponible</p>
+                    <img src="assets/carbon_badge.png">
+                </div>
+                <div class="flex flex-col gap-3 items-start">
+                        <p class="text-white text-2xl fade-in">&#x2713
+                            <span class="text-white text-lg">Maîtrise de l'interface utilisateur</span>
+                        </p>
+                        <p class="text-white text-2xl fade-in">&#x2713
+                            <span class="text-white text-lg">Création de prototypes interactifs</span>
+                        </p>
+                        <p class="text-white text-2xl fade-in">&#x2713
+                            <span class="text-white text-lg">Collaboration en équipe</span>
+                        </p>
+                </div>
+                <a href="contact.html" class="text-blue-500 text-lg font-medium fade-in">S'inscrire</a>
+            </div>
+
+            <div
+                class="w-fit h-fit gap-5 border border-white rounded-2xl text-center flex flex-col items-center p-10 reveal-element">
+                <img src="assets/csharp.png" alt="Next-js" class="items-center w-28 h-28 fade-in">
+                <p class="text-2xl text-white font-medium uppercase text-center">Apprenez c#</p>
+                <div>
+                    <p class="text-2xl text-white font-medium text-center flex items-center fade-in">
+                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="mr-2">
+                            <path
+                                d="M16 18H2V7H16M13 0V2H5V0H3V2H2C0.89 2 0 2.89 0 4V18C0 18.5304 0.210714 19.0391 0.585786 19.4142C0.960859 19.7893 1.46957 20 2 20H16C16.5304 20 17.0391 19.7893 17.4142 19.4142C17.7893 19.0391 18 18.5304 18 18V4C18 3.46957 17.7893 2.96086 17.4142 2.58579C17.0391 2.21071 16.5304 2 16 2H15V0M14 11H9V16H14V11Z"
+                                fill="white" />
+                        </svg> 65 Jours
+                    </p>
+                </div>
+                <div class="w-fit flex items-center rounded-2xl bg-white fade-in">
+                    <p class="text-md font-medium text-black p-2">Certification disponible</p>
+                    <img src="assets/carbon_badge.png">
+                </div>
+                <div class="flex flex-col gap-3 items-start">
+                        <p class="text-white text-2xl fade-in">&#x2713
+                            <span class="text-white text-lg">Programmation orientée objet (POO)</span>
+                        </p>
+                        <p class="text-white text-2xl fade-in">&#x2713
+                            <span class="text-white text-lg">Développement d'API REST</span>
+                        </p>
+                        <p class="text-white text-2xl fade-in">&#x2713
+                            <span class="text-white text-lg">Gestion de bases de données</span>
+                        </p>
+                        <p class="text-white text-2xl fade-in">&#x2713
+                            <span class="text-white text-lg">Modélisation de données NoSQL</span>
+                        </p>
+                </div>
+                <a href="contact.html" class="text-blue-500 text-lg font-medium fade-in">S'inscrire</a>
+            </div>
+
+            <div
+                class="w-fit h-fit gap-5 border border-white rounded-2xl text-center flex flex-col items-center p-10 reveal-element">
+                <img src="assets/Mongodb.png" alt="Next-js" class="items-center w-28 h-28 fade-in">
+                <p class="text-2xl text-white font-medium uppercase text-center">Apprenez MongoDb</p>
+                <div>
+                    <p class="text-2xl text-white font-medium text-center flex items-center fade-in">
+                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="mr-2">
+                            <path
+                                d="M16 18H2V7H16M13 0V2H5V0H3V2H2C0.89 2 0 2.89 0 4V18C0 18.5304 0.210714 19.0391 0.585786 19.4142C0.960859 19.7893 1.46957 20 2 20H16C16.5304 20 17.0391 19.7893 17.4142 19.4142C17.7893 19.0391 18 18.5304 18 18V4C18 3.46957 17.7893 2.96086 17.4142 2.58579C17.0391 2.21071 16.5304 2 16 2H15V0M14 11H9V16H14V11Z"
+                                fill="white" />
+                        </svg> 65 Jours
+                    </p>
+                </div>
+                <div class="w-fit flex items-center rounded-2xl bg-white fade-in">
+                    <p class="text-md font-medium text-black p-2">Certification disponible</p>
+                    <img src="assets/carbon_badge.png">
+                </div>
+                <div class="flex flex-col gap-3 items-start">
+                        <p class="text-white text-2xl fade-in">&#x2713
+                            <span class="text-white text-lg">Opérations CRUD</span>
+                        </p>
+                        <p class="text-white text-2xl fade-in">&#x2713
+                            <span class="text-white text-lg">Modélisation de données NoSQL</span>
+                        </p>
+                        <p class="text-white text-2xl fade-in">&#x2713
+                            <span class="text-white text-lg">Optimisation des performances</span>
+                        </p>
+                </div>
+                <a href="contact.html" class="text-blue-500 text-lg font-medium fade-in">S'inscrire</a>
+            </div>
+
+            <div
+            class="w-fit h-fit gap-5 border border-white rounded-2xl text-center flex flex-col items-center p-10 reveal-element">
+            <img src="assets/c.png" alt="Next-js" class="items-center w-28 h-28 fade-in">
+            <p class="text-2xl text-white font-medium uppercase text-center">Apprenez C++</p>
+            <div>
+                <p class="text-2xl text-white font-medium text-center flex items-center fade-in">
+                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="mr-2">
+                        <path
+                            d="M16 18H2V7H16M13 0V2H5V0H3V2H2C0.89 2 0 2.89 0 4V18C0 18.5304 0.210714 19.0391 0.585786 19.4142C0.960859 19.7893 1.46957 20 2 20H16C16.5304 20 17.0391 19.7893 17.4142 19.4142C17.7893 19.0391 18 18.5304 18 18V4C18 3.46957 17.7893 2.96086 17.4142 2.58579C17.0391 2.21071 16.5304 2 16 2H15V0M14 11H9V16H14V11Z"
+                            fill="white" />
+                    </svg> 65 Jours
+                </p>
+            </div>
+            <div class="w-fit flex items-center rounded-2xl bg-white fade-in">
+                <p class="text-md font-medium text-black p-2">Certification disponible</p>
+                <img src="assets/carbon_badge.png">
+            </div>
+            <div class="flex flex-col gap-3 items-start">
+                    <p class="text-white text-2xl fade-in">&#x2713
+                        <span class="text-white text-lg">Maîtrise des fondamentaux</span>
+                    </p>
+                    <p class="text-white text-2xl fade-in">&#x2713
+                        <span class="text-white text-lg">Programmation orientée objet (POO)</span>
+                    </p>
+                    <p class="text-white text-2xl fade-in">&#x2713
+                        <span class="text-white text-lg">Gestion de la mémoire</span>
+                    </p>
+                    <p class="text-white text-2xl fade-in">&#x2713
+                        <span class="text-white text-lg">Développement d'applications performantes</span>
+                    </p>
+            </div>
+            <a href="contact.html" class="text-blue-500 text-lg font-medium fade-in">S'inscrire</a>
+        </div>
+
+        <div
+        class="w-fit h-fit gap-5 border border-white rounded-2xl text-center flex flex-col items-center p-10 reveal-element">
+        <img src="assets/Python.png" alt="Next-js" class="items-center w-28 h-28 fade-in">
+        <p class="text-2xl text-white font-medium uppercase text-center">Apprenez Python</p>
+        <div>
+            <p class="text-2xl text-white font-medium text-center flex items-center fade-in">
+                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="mr-2">
+                    <path
+                        d="M16 18H2V7H16M13 0V2H5V0H3V2H2C0.89 2 0 2.89 0 4V18C0 18.5304 0.210714 19.0391 0.585786 19.4142C0.960859 19.7893 1.46957 20 2 20H16C16.5304 20 17.0391 19.7893 17.4142 19.4142C17.7893 19.0391 18 18.5304 18 18V4C18 3.46957 17.7893 2.96086 17.4142 2.58579C17.0391 2.21071 16.5304 2 16 2H15V0M14 11H9V16H14V11Z"
+                        fill="white" />
+                </svg> 65 Jours
+            </p>
+        </div>
+        <div class="w-fit flex items-center rounded-2xl bg-white fade-in">
+            <p class="text-md font-medium text-black p-2">Certification disponible</p>
+            <img src="assets/carbon_badge.png">
+        </div>
+        <div class="flex flex-col gap-3 items-start">
+                <p class="text-white text-2xl fade-in">&#x2713
+                    <span class="text-white text-lg">Manipulation de données</span>
+                </p>
+                <p class="text-white text-2xl fade-in">&#x2713
+                    <span class="text-white text-lg">Analyse de données</span>
+                </p>
+                <p class="text-white text-2xl fade-in">&#x2713
+                    <span class="text-white text-lg">Machine Learning</span>
+                </p>
+                <p class="text-white text-2xl fade-in">&#x2713
+                    <span class="text-white text-lg">Développement web</span>
+                </p>
+        </div>
+        <a href="contact.html" class="text-blue-500 text-lg font-medium fade-in">S'inscrire</a>
+    </div>
+
+        </div>
+
+
+
+        <!--Container section-->
+
+    </main>
+    <footer  id="footer" class="flex gap-7 flex-col w-full mb-10 relative" >
+        <div class="absolute right-1/2 rounded-full w-10 h-10 flex items-center justify-center bg-secondary animate-bounce hover:cursor-pointer" onclick="scrollToElement('home-section')"><span class="text-center text-white font-light text-3xl">&#8593</span></div>
+        <div class="w-full h-0.5 bg-white"></div>
+        <div class="flex justify-evenly flex-wrap gap-2">
+            <div class="flex flex-col gap-1">
+                <p class="text-white text-lg font-medium uppercase">Contact</p>
+                <p class="text-white text-lg font-normal">+229 64 25 95 31</p>
+                <p class="text-white text-lg font-normal">+33 6 81 68 09 13</p>
+                <p class="text-white text-lg font-normal">contact@prolabafrik.com</p>
+            </div>
+            <div class="flex flex-col gap-3">
+                <p class="text-white text-lg font-medium uppercase">Réseaux sociaux</p>
+                <img src="assets/social.png" alt="">
+            </div>
+        </div>  
+        <p class="text-white text-lg font-bold text-center">© 2024 ProLabAfrik</p>
+    </footer>
+    <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>

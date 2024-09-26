@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+    <title>Prolab Afrik</title>
+    <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+</head>
+
+<body class="bg-black relative">
+    <header id="header" class="sticky top-0 z-10 w-full">
+        <span class="absolute right-0 text-primary text-5xl text-center md:hidden lg:hidden" onclick="toggleMenu()"
+            id="hamburger-menu-btn">&#9776</span>
+        <nav class="justify-center bg-black w-full hidden md:flex lg:flex" id="navbar">
+            <div
+                class="flex gap-5 items-center p-3  mt-5  flex-col md:flex-row lg:flex-row md:w-fit   md:rounded-full md:border-white md:border lg:w-fit   lg:rounded-full lg:border-white lg:border">
+                <img src="./assets/logo.png" alt="logo" class="hover:animate-spin cursor-pointer">
+                <div onclick="scrollToElement('home-section')" class="group  transition duration-300">
+                    <p class="text-lg text-white hover:cursor-pointer">Accueil</p>
+                    <span class="block w-0 group-hover:w-1/2 transition-all duration-500 h-0.5 bg-primary"></span>
+                </div>
+                <div onclick="scrollToElement('services-section')" class="group  transition duration-300">
+                    <p class="text-lg text-white hover:cursor-pointer">Services</p>
+                    <span class="block w-0 group-hover:w-1/2 transition-all duration-500 h-0.5 bg-primary"></span>
+                </div>
+                <div onclick="scrollToElement('incubator-section')" class="group  transition duration-300">
+                    <p class="text-lg text-white hover:cursor-pointer">Incubateur</p>
+                    <span class="block w-0 group-hover:w-1/2 transition-all duration-500 h-0.5 bg-primary"></span>
+                </div>
+                <button
+                    class="bg-primary text-lg text-white font-inter font-normal tracking-wide rounded-full  p-3 hover:animate-pulse">Contactez-Nous</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="logiciel-section" class="flex flex-col gap-20 m-10 reveal-element">
+            <div class="w-fit flex flex-col gap-2 m-auto">
+                <p class="text-4xl md:text-5xl lg:text-5xl text-white text-center uppercase font-black">Formations
+                    Professionnelles en Informatique
+                </p>
+                <!-- separator -->
+                <div class="w-1/5 h-4 bg-primary"></div>
+            </div>
+            <div class="flex relative gap-20">
+                <div
+                    class=" absolute right-1/2 left-1/2 top-1/2 bottom-1/2 -z-50 w-1 h-1 rounded-full bg-secondary shadow-bgBlurSecondary animate-pulse">
+                </div>
+                <div class="text-center flex-col gap-10 fade-in w-full">
+                    <p class="text-white text-sm font-normal lg:text-3xl md:text-3xl">Équipez-vous des compétences
+                        nécessaires pour exceller dans le monde numérique avec nos cours approfondis en Python, Java,
+                        C++, et bien plus encore.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+
+
+            <div class="grid grid-cols-2 gap-5 ">
+
+                <div
+                    class="course-card w-fit  p-5 border border-white rounded-2xl text-center flex flex-col items-center gap-5">
+                    <img src="assets/Next-js.png" alt="Next-js" class="items-center">
+                    <p class="text-2xl text-white font-medium uppercase text-center">Apprenez Next JS</p>
+                    <div>
+                        <p class="text-2xl text-white font-medium text-center flex items-center">
+                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="mr-2">
+                                <path
+                                    d="M16 18H2V7H16M13 0V2H5V0H3V2H2C0.89 2 0 2.89 0 4V18C0 18.5304 0.210714 19.0391 0.585786 19.4142C0.960859 19.7893 1.46957 20 2 20H16C16.5304 20 17.0391 19.7893 17.4142 19.4142C17.7893 19.0391 18 18.5304 18 18V4C18 3.46957 17.7893 2.96086 17.4142 2.58579C17.0391 2.21071 16.5304 2 16 2H15V0M14 11H9V16H14V11Z"
+                                    fill="white" />
+                            </svg> 65 Jours
+                        </p>
+                    </div>
+                    <div class="flex gap-2 p-3 items-center rounded-3xl bg-white w-fit">
+                        <p class="text-2xl font-normal text-black">Certification disponible</p>
+                        <img src="assets/carbon_badge.png" alt="">
+                    </div>
+                    <ul class="mb-6 flex flex-col w-fit gap-5">
+                        <li class="text-white flex items-center mb-2 text-2xl">
+                            <svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Maîtrise des composants React
+                        </li>
+                        <li class="text-white flex items-center mb-2 text-2xl">
+                            <svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Création d'applications web performantes
+                        </li>
+                        <li class="text-white flex items-center mb-2 text-2xl">
+                            <svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Routage dynamique et navigation
+                        </li>
+                        <li class="text-white flex items-center mb-2 text-2xl">
+                            <svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Réduction des coûts
+                        </li>
+                        <li class="text-white flex items-center mb-2 text-2xl">
+                            <svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Intégration de données et API
+                        </li>
+                    </ul>
+                    <p class="text-primary">Bientôt Disponible...</p>
+                </div>
+
+                <div
+                    class="course-card w-fit  p-5 border border-white rounded-2xl text-center flex flex-col items-center gap-5">
+                    <img src="assets/Figma.png" alt="Next-js" class="items-center">
+                    <p class="text-2xl text-white font-medium uppercase text-center">Apprenez Figma</p>
+                    <div>
+                        <p class="text-2xl text-white font-medium text-center flex items-center">
+                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="mr-2">
+                                <path
+                                    d="M16 18H2V7H16M13 0V2H5V0H3V2H2C0.89 2 0 2.89 0 4V18C0 18.5304 0.210714 19.0391 0.585786 19.4142C0.960859 19.7893 1.46957 20 2 20H16C16.5304 20 17.0391 19.7893 17.4142 19.4142C17.7893 19.0391 18 18.5304 18 18V4C18 3.46957 17.7893 2.96086 17.4142 2.58579C17.0391 2.21071 16.5304 2 16 2H15V0M14 11H9V16H14V11Z"
+                                    fill="white" />
+                            </svg> 65 Jours
+                        </p>
+                    </div>
+                    <div class="flex gap-2 p-3 items-center rounded-3xl bg-white w-fit">
+                        <p class="text-2xl font-normal text-black">Certification disponible</p>
+                        <img src="assets/carbon_badge.png" alt="">
+                    </div>
+                    <ul class="mb-6 flex flex-col w-fit gap-5">
+                        <li class="text-white flex items-center mb-2 text-2xl text-justify">
+                            <svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Maîtrise de l'interface utilisateur (UI) et de<br> l'expérience utilisateur (UX)
+                        </li>
+                        <li class="text-white flex items-center mb-2 text-2xl">
+                            <svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Création de prototypes interactifs
+                        </li>
+                        <li class="text-white flex items-center mb-2 text-2xl">
+                            <svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Collaboration en équipe
+                        </li>
+                    </ul>
+                    <p class="text-primary">Bientôt Disponible...</p>
+                </div>
+
+                <div
+                    class="course-card w-fit  p-5 border border-white rounded-2xl text-center flex flex-col items-center gap-5">
+                    <img src="assets/C#.png" alt="Next-js" class="items-center">
+                    <p class="text-2xl text-white font-medium uppercase text-center">Apprenez Next JS</p>
+                    <div>
+                        <p class="text-2xl text-white font-medium text-center flex items-center">
+                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="mr-2">
+                                <path
+                                    d="M16 18H2V7H16M13 0V2H5V0H3V2H2C0.89 2 0 2.89 0 4V18C0 18.5304 0.210714 19.0391 0.585786 19.4142C0.960859 19.7893 1.46957 20 2 20H16C16.5304 20 17.0391 19.7893 17.4142 19.4142C17.7893 19.0391 18 18.5304 18 18V4C18 3.46957 17.7893 2.96086 17.4142 2.58579C17.0391 2.21071 16.5304 2 16 2H15V0M14 11H9V16H14V11Z"
+                                    fill="white" />
+                            </svg> 65 Jours
+                        </p>
+                    </div>
+                    <div class="flex gap-2 p-3 items-center rounded-3xl bg-white w-fit">
+                        <p class="text-2xl font-normal text-black">Certification disponible</p>
+                        <img src="assets/carbon_badge.png" alt="">
+                    </div>
+                    <ul class="mb-6 flex flex-col w-fit gap-5">
+                        <li class="text-white flex items-center mb-2 text-2xl">
+                            <svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Programmation orientée objet (POO):
+                        </li>
+                        <li class="text-white flex items-center mb-2 text-2xl">
+                            <svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Développement d'API REST
+                        </li>
+                        <li class="text-white flex items-center mb-2 text-2xl">
+                            <svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Gestion de bases de données
+                        </li>
+                        <li class="text-white flex items-center mb-2 text-2xl">
+                            <svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Modélisation de données NoSQL
+                        </li>
+                    </ul>
+                    <p class="text-primary">Bientôt Disponible...</p>
+                </div>
+
+                <div
+                    class="course-card w-fit  p-5 border border-white rounded-2xl text-center flex flex-col items-center gap-5">
+                    <img src="assets/Mongodb.png" alt="Next-js" class="items-center">
+                    <p class="text-2xl text-white font-medium uppercase text-center">Apprenez Next JS</p>
+                    <div>
+                        <p class="text-2xl text-white font-medium text-center flex items-center">
+                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="mr-2">
+                                <path
+                                    d="M16 18H2V7H16M13 0V2H5V0H3V2H2C0.89 2 0 2.89 0 4V18C0 18.5304 0.210714 19.0391 0.585786 19.4142C0.960859 19.7893 1.46957 20 2 20H16C16.5304 20 17.0391 19.7893 17.4142 19.4142C17.7893 19.0391 18 18.5304 18 18V4C18 3.46957 17.7893 2.96086 17.4142 2.58579C17.0391 2.21071 16.5304 2 16 2H15V0M14 11H9V16H14V11Z"
+                                    fill="white" />
+                            </svg> 65 Jours
+                        </p>
+                    </div>
+                    <div class="flex gap-2 p-3 items-center rounded-3xl bg-white w-fit">
+                        <p class="text-2xl font-normal text-black">Certification disponible</p>
+                        <img src="assets/carbon_badge.png" alt="">
+                    </div>
+                    <ul class="mb-6 flex flex-col w-fit gap-5">
+                        <li class="text-white flex items-center mb-2 text-2xl">
+                            <svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Maîtrise des composants React
+                        </li>
+                        <li class="text-white flex items-center mb-2 text-2xl">
+                            <svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Création d'applications web performantes
+                        </li>
+                        <li class="text-white flex items-center mb-2 text-2xl">
+                            <svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Routage dynamique et navigation
+                        </li>
+                        <li class="text-white flex items-center mb-2 text-2xl">
+                            <svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Réduction des coûts
+                        </li>
+                        <li class="text-white flex items-center mb-2 text-2xl">
+                            <svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Intégration de données et API
+                        </li>
+                    </ul>
+                    <p class="text-primary">Bientôt Disponible...</p>
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+            <!--Container section-->
+
+    </main>
+    <footer id="footer" class="flex gap-7 flex-col w-full mb-10 relative">
+        <div class="absolute right-1/2 rounded-full w-10 h-10 flex items-center justify-center bg-secondary animate-bounce hover:cursor-pointer"
+            onclick="scrollToElement('home-section')"><span
+                class="text-center text-white font-light text-3xl">&#8593</span></div>
+        <div class="w-full h-0.5 bg-white"></div>
+        <nav class="hidden md:block lg:block">
+            <div class="flex justify-evenly items-center">
+                <img src="./assets/logo.png" alt="logo">
+                <a href="#" class="group lg:text-lg md:text-lg text-white transition duration-300">
+                    Accueil
+                    <span class="block w-0 group-hover:w-1/2 transition-all duration-500 h-0.5 bg-primary"></span>
+                </a>
+                <a href="#" class="group lg:text-lg md:text-lg text-white transition duration-300">
+                    Services
+                    <span class="block w-0 group-hover:w-1/2 transition-all duration-500 h-0.5 bg-primary"></span>
+                </a>
+                <a href="#" class="group lg:text-lg md:text-lg text-white transition duration-300">
+                    Incubateur
+                    <span class="block w-0 group-hover:w-1/2 transition-all duration-500 h-0.5 bg-primary"></span>
+                </a>
+                <button
+                    class="bg-primary text-sm md:text-lg lg:text-lg text-white font-inter font-normal tracking-wide rounded-full   px-4 py-2  md:px-10 md:py-4 lg:px-10 lg:py-4 hover:animate-pulse">Contactez-Nous</button>
+            </div>
+        </nav>
+        <div class="flex justify-evenly flex-wrap gap-2">
+            <div class="flex flex-col gap-1">
+                <p class="text-white text-lg font-medium uppercase">Addresse</p>
+                <p class="text-white text-lg font-normal">BENIN</p>
+                <p class="text-white text-lg font-normal">Abomey-Calavi</p>
+                <p class="text-white text-lg font-normal">Bidossessi</p>
+                <p class="text-white text-lg font-normal">Route de l'université</p>
+            </div>
+
+            <div class="flex flex-col gap-1">
+                <p class="text-white text-lg font-medium uppercase">Contact</p>
+                <p class="text-white text-lg font-normal">+229 64 25 95 31</p>
+                <p class="text-white text-lg font-normal">contact@prolabafrik.com</p>
+            </div>
+            <div class="flex flex-col gap-3">
+                <p class="text-white text-lg font-medium uppercase">Réseaux sociaux</p>
+                <p class="text-white text-lg font-normal">+229 64 25 95 31</p>
+                <p class="text-white text-lg font-normal">contact@prolabafrik.com</p>
+            </div>
+        </div>
+        <p class="text-white text-lg font-bold text-center">© 2024 ProLabAfrik</p>
+    </footer>
+    <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>

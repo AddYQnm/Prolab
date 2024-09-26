@@ -1,0 +1,42 @@
+<?php 
+session_start();
+$routes = [
+
+    '/connexion' => 'connexion.php'
+];try {
+    // Connexion à la base de données
+    $bdd = new PDO('mysql:host=localhost;dbname=espacemembres;charset=utf8;', 'root', 'root');
+} catch (Exception $e) {
+    // En cas d'erreur, on arrête tout et on affiche le message d'erreur
+    die('Erreur : ' . $e->getMessage());
+}
+
+if(isset($_POST['envoi'])) {
+    // Vérification si tous les champs sont remplis
+    if(!empty($_POST['email']) && !empty($_POST['password'])) {
+        $email = htmlspecialchars($_POST['email']);
+        $mdp = sha1($_POST['password']);
+
+        // Préparation de la requête SQL
+        $recupUser = $bdd->prepare('SELECT * FROM user WHERE email = ? AND mdp = ?');
+        $recupUser->execute(array($email, $mdp));
+
+        // Vérification si un utilisateur correspond
+        if($recupUser->rowCount() > 0) {
+            // Récupération des informations utilisateur
+            $user = $recupUser->fetch();
+            $_SESSION['id'] = $user['id'];
+            $_SESSION['email'] = $user['email'];
+            $_SESSION['mdp'] = $user['mdp'];
+
+            // Redirection vers la page d'accueil après connexion réussie
+            header('Location: connecter.html');
+            exit; // Assurez-vous que rien d'autre n'est envoyé après
+        } else {
+            echo "Votre email ou mot de passe est incorrect.";
+        }
+    } else {
+        echo "Veuillez compléter tous les champs...";
+    }
+}
+?>
